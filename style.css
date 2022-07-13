@@ -473,17 +473,51 @@ footer .redes ul {
 }
 
 footer .redes ul li {
+    display: flex;
     list-style: none;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .redes ul li a {
     font-size: 25px;
-    display: inline-block;
+    line-height: 50px;
+    display: block;
+    padding: 0 10px;
     color: #fff;
-    margin-left: 40px;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.2s;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, .2);
 }
+
+footer ul:hover a {
+    filter: blur(2px);
+}
+
+footer ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+footer ul li .facebook:hover {
+    background: #3b5999;
+}
+
+footer ul li .instagram:hover {
+    background: #e4405f;
+}
+
+footer ul li .youtube:hover {
+    background: #bd081c;
+}
+
+
+
 
 footer .copyright {
     font-size: 1.4rem;
@@ -494,17 +528,7 @@ footer .copyright span {
     font-weight: 500;
 }
 
-footer .redes ul li .facebook:hover {
-    color: red;
-}
 
-footer .redes ul li .instagram:hover {
-    color: red;
-}
-
-footer .redes ul li .youtube:hover {
-    color: red;
-}
 
 
 
